@@ -34,7 +34,7 @@
 <script type="module">
 
   // Firebase stuff
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+  import { initializeApp } from "firebase/app";
   const firebaseConfig = {
     apiKey: "AIzaSyDTTAISZM2Cw9jl2UfVerbhctO-wmnnz80",
     authDomain: "project-app-b0d5c.firebaseapp.com",
