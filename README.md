@@ -34,8 +34,7 @@
 <script type="module">
 
   // Firebase stuff
-  import { initializeApp } from "firebase/app";
-  import { getAnalytics } from "firebase/analytics";
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
   const firebaseConfig = {
     apiKey: "AIzaSyDTTAISZM2Cw9jl2UfVerbhctO-wmnnz80",
     authDomain: "project-app-b0d5c.firebaseapp.com",
@@ -47,7 +46,6 @@
     measurementId: "G-BTWR51ZRE6"
   };
   const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
   import {getDatabase, set, get, update, remove, ref, child}
   from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";
   const db = getDatabase();
