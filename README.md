@@ -14,7 +14,6 @@
     </style>
   </head>
   <body>
-    <img class="center-fit" src="jacksonsoft-logo.png" alt="banner">
 
     <iframe src="https://thunkable.site/w/-7cohwoy82Tikq54IinxP" title="Profile App" height=750 width=450></iframe>
 
