@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en-US">
   <head>
     <meta charset="utf-8" />
@@ -13,8 +14,22 @@
       }
     </style>
   </head>
+
+
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F52CJTFKLZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-F52CJTFKLZ');
+  </script>
+
+
+
   <body>
-    <h>THIS IS A BRANCH</h>
     <img class="center-fit" src="jacksonsoft-logo.png" alt="banner">
 
     <iframe src="https://thunkable.site/w/-7cohwoy82Tikq54IinxP" title="Profile App" height=750 width=450></iframe>
@@ -34,7 +49,8 @@
 <script type="module">
 
   // Firebase stuff
-  import { initializeApp } from "firebase/app";
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js";
   const firebaseConfig = {
     apiKey: "AIzaSyDTTAISZM2Cw9jl2UfVerbhctO-wmnnz80",
     authDomain: "project-app-b0d5c.firebaseapp.com",
@@ -43,9 +59,10 @@
     storageBucket: "project-app-b0d5c.appspot.com",
     messagingSenderId: "891081504552",
     appId: "1:891081504552:web:89d1cd9272a0342119c21d",
-    measurementId: "G-BTWR51ZRE6"
+    measurementId: "G-F52CJTFKLZ"
   };
   const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
   import {getDatabase, set, get, update, remove, ref, child}
   from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";
   const db = getDatabase();
